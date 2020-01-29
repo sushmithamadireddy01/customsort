@@ -1,0 +1,27 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<button (click)="export()">Download</button>
+<div>
+  <div style="height: 100%; padding-top: 26px; box-sizing: border-box;">
+    <ag-grid-angular 
+    style="width: 95vw; height: 77vh;" 
+    class="ag-theme-balham"
+    [rowData]="rowData" 
+    [columnDefs]="columnDefs"
+    [modules]="modules"
+    [paginationAutoPageSize]='true'
+    [pagination]="true"
+    [rowClassRules]="rowClassRules"
+    [defaultColDef]="defaultColDef"
+    [postSort] ="postSort"
+    (firstDataRendered)="onFirstDataRendered($event)"
+    [excelStyles]="excelStyles"
+    (gridReady)="onGridReady($event)">
+</ag-grid-angular>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@ag-grid-community/all-modules/dist/styles/ag-grid.css";
+@import "~@ag-grid-community/all-modules/dist/styles/ag-theme-balham.css";
+
+
+.ag-theme-balham .ag-header-cell, .ag-theme-balham .ag-header-group-cell{
+    font-weight: bold;
+    color:black;
+    padding-left:60px;
+    }
+    .ag-theme-balham .ag-paging-panel{
+        font-weight: bold;
+        color:black;
+    }
+
+    .ag-theme-balham .sick-days-warning {
+        font-weight: bold !important;
+    }
